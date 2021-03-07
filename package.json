@@ -1,5 +1,5 @@
 {
-  "name": "adventofcode2021",
+  "name": "jujeti",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jsmadja/adventofcode2021.git"
+    "url": "git+https://github.com/jsmadja/jujeti.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jsmadja/adventofcode2021/issues"
+    "url": "https://github.com/jsmadja/jujeti/issues"
   },
   "husky": {
     "hooks": {
@@ -24,7 +24,7 @@
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
   },
-  "homepage": "https://github.com/jsmadja/adventofcode2021#readme",
+  "homepage": "https://github.com/jsmadja/jujeti#readme",
   "devDependencies": {
     "@babel/core": "^7.13.8",
     "@babel/preset-env": "^7.13.9",
