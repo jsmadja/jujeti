@@ -13,10 +13,11 @@
 
 const factorielle = (nb) => {
   let result = 1;
-  for(let i = 1; i <= nb; i++){
-    result = result * i;
+  // eslint-disable-next-line no-plusplus
+  for (let i = 1; i <= nb; i++) {
+    result *= i;
   }
-  return result
-}
-
+  return result;
+};
+// eslint-disable-next-line no-console
 console.log(factorielle(5));

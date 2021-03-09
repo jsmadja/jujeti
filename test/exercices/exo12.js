@@ -7,12 +7,14 @@
 // Entrée: 42145 Sortie:54421
 
 function descendingOrder(n) {
-  const tab = n.toString().split('')
+  const tab = n
+    .toString()
+    .split('')
     .map((nb) => nb)
     .sort((a, b) => b - a)
     .join('');
   // eslint-disable-next-line radix
   return parseInt(tab);
 }
-
+// eslint-disable-next-line no-console
 console.log(descendingOrder(6547189));

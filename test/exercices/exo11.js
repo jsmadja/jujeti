@@ -14,5 +14,3 @@
 // var arrTest = [0,10];
 // arrTest.push(80);
 // console.log(arrTest);
-
-

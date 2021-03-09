@@ -1,43 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <button>Affiche un paquet de chips</button> 
-        <div id="chips">Cliquer pour avoir un paquet de chips surprise</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>Affiche un paquet de chips</button>
+    <div id="chips">Cliquer pour avoir un paquet de chips surprise</div>
 
-        <script>
-            // tableaux de chips
-            const mesChips = [
-                'paquet de chips bacon',
-                'paquet de chips barbecue',
-                'paquet de chips fromage',
-                'paquet de chips salée',
-            ];
-            // liste d'icones
-            const icones = [
-                '😱',
-                '😜',
-                '🤯',
-                '😋',
-
-            ]
-            // ici tu récupère ta div :
-            let monDiv = document.querySelector('#chips');
-            // ici on récupère le button :
-            let bouton = document.querySelector('button');
-            // ici on créé un evenement sur le button :
-            bouton.addEventListener("click", function(){  // ici tu dis qu'au click tu déclenches la fonction
-                let affichageListeChips = '';
-                for(let i = 0; i < mesChips.length; i++){
-                    affichageListeChips += `${icones[i]} : ${mesChips[i]} <br />`;
-                }
-                monDiv.innerHTML = affichageListeChips; // tu ajoutes ton affichage a ton div
-            })
-        </script>
-    </body>
+    <script>
+      // tableaux de chips
+      const mesChips = [
+        'paquet de chips bacon',
+        'paquet de chips barbecue',
+        'paquet de chips fromage',
+        'paquet de chips salée',
+      ];
+      // liste d'icones
+      const icones = ['😱', '😜', '🤯', '😋'];
+      // ici tu récupère ta div :
+      let monDiv = document.querySelector('#chips');
+      // ici on récupère le button :
+      let bouton = document.querySelector('button');
+      // ici on créé un evenement sur le button :
+      bouton.addEventListener('click', function () {
+        // ici tu dis qu'au click tu déclenches la fonction
+        let affichageListeChips = '';
+        for (let i = 0; i < mesChips.length; i++) {
+          affichageListeChips += `${icones[i]} : ${mesChips[i]} <br />`;
+        }
+        monDiv.innerHTML = affichageListeChips; // tu ajoutes ton affichage a ton div
+      });
+    </script>
+  </body>
 </html>
-

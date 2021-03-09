@@ -8,14 +8,17 @@ const nb1 = 2;
 const nb2 = 3;
 const nb3 = 1;
 
-const verifierNombre = (x,y,z) => {
-  if(x !== y && x !== z && y !== z){
+const verifierNombre = (x, y, z) => {
+  if (x !== y && x !== z && y !== z) {
+    // eslint-disable-next-line no-console
     console.log('Les trois variables sont différentes');
-  } else if(x === y && x === z && y === z){
+  } else if (x === y && x === z && y === z) {
+    // eslint-disable-next-line no-console
     console.log('Les trois variables sont identiques');
-  } else if( x === y || x === z || y === z){
+  } else if (x === y || x === z || y === z) {
+    // eslint-disable-next-line no-console
     console.log('deux des variables sont de valeurs égales');
   }
-}
+};
 
-verifierNombre(nb1,nb2,nb3);
+verifierNombre(nb1, nb2, nb3);

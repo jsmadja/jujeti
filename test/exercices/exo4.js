@@ -8,9 +8,10 @@
 
 const table = ['a', 'b', 'a', 'c', 'a', 'd', 'b', 'c', 'c', 'a'];
 
-const nbOccurrences = (tab, character) => {
-  return tab.filter(t => t === character).length;
-}
-
+const nbOccurrences = (tab, character) => tab.filter((t) => t === character).length;
+// eslint-disable-next-line no-console
 console.log(nbOccurrences(table, 'a'));
-console.log(`----- Il y a ${nbOccurrences(table, 'a')} 'a' dans le tableau -----`)
+// eslint-disable-next-line no-console
+console.log(
+  `----- Il y a ${nbOccurrences(table, 'a')} 'a' dans le tableau -----`,
+);

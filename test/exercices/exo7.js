@@ -10,10 +10,8 @@
 // La fonction split(), permet de transformer une chaine de caractère en tableau.
 // La fonction reverse(), permet de retourner les éléments d'un tableau.
 
-const phrase1 = "Bonjour à tous";
+const phrase1 = 'Bonjour à tous';
 
-const inverserPhrase = (phrase) => {
-  return phrase.split('').reverse().join('');
-}
-
+const inverserPhrase = (phrase) => phrase.split('').reverse().join('');
+// eslint-disable-next-line no-console
 console.log(inverserPhrase(phrase1));

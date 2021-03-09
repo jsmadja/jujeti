@@ -5,9 +5,7 @@
 // Si elles correspondent, retournez "La fin est similaire"
 // Sinon "La fin ne correspond pas".
 
-
 // ----------------- CONSEILS -----------------
-
 
 // La fonction "slice" permet de découper une chaine de caractère.
 // Essayez cela :
@@ -20,16 +18,14 @@
 // Mais il y a des dizaines de façon de résoudre cet algorithme(et les autres...),
 // N'hésitez pas à le faire à votre façon et à TESTER vos idées(c'est important).
 
-const mot1 = 'zelda'
+const mot1 = 'zelda';
 
 const veriferFinDeMot = (mot, fin) => {
-  let finDuMot = mot.slice(-fin.length);
-  console.log(finDuMot)
-  if(finDuMot === fin){
+  const finDuMot = mot.slice(-fin.length);
+  if (finDuMot === fin) {
     return 'La fin est similaire';
-  } else {
-    return 'La fin ne correspond pas';
   }
-}
-
+  return 'La fin ne correspond pas';
+};
+// eslint-disable-next-line no-console
 console.log(veriferFinDeMot(mot1, 'da'));

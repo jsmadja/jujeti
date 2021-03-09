@@ -1,9 +1,12 @@
-let nbAleatoire = Math.floor(Math.random() * 20);
+const nbAleatoire = Math.floor(Math.random() * 20);
 
-if(nbAleatoire < 7){
-    console.log(nbAleatoire + ' : Petit');
-} else if(nbAleatoire < 15){
-    console.log(nbAleatoire + ' : Moyen');
+if (nbAleatoire < 7) {
+  // eslint-disable-next-line no-console
+  console.log(`${nbAleatoire} : Petit`);
+} else if (nbAleatoire < 15) {
+  // eslint-disable-next-line no-console
+  console.log(`${nbAleatoire} : Moyen`);
 } else {
-    console.log(nbAleatoire + ' : Grand');
+  // eslint-disable-next-line no-console
+  console.log(`${nbAleatoire} : Grand`);
 }
