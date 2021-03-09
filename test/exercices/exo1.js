@@ -35,10 +35,6 @@ console.log(classerParDateDeSortie);
 // eslint-disable-next-line no-console
 console.log(
   `Les jeux classés par date de sortie : \n ${classerParDateDeSortie
-    .map(
-      (game, index) => `${index + 1} : ${game.name} sur ${game.platform} sortie en ${
-        game.releaseYear
-      } \n`,
-    )
+    .map((game, index) => `${index + 1} : ${game.name} sur ${game.platform} sortie en ${game.releaseYear} \n`)
     .join(' ')}`,
 );

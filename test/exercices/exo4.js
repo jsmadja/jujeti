@@ -12,6 +12,4 @@ const nbOccurrences = (tab, character) => tab.filter((t) => t === character).len
 // eslint-disable-next-line no-console
 console.log(nbOccurrences(table, 'a'));
 // eslint-disable-next-line no-console
-console.log(
-  `----- Il y a ${nbOccurrences(table, 'a')} 'a' dans le tableau -----`,
-);
+console.log(`----- Il y a ${nbOccurrences(table, 'a')} 'a' dans le tableau -----`);

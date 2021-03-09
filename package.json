@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint '**/*.[j|t]s' && prettier --check .",
+    "lint": "prettier --write . && eslint '**/*.[j|t]s' && prettier --check .",
     "test": "jest"
   },
   "repository": {

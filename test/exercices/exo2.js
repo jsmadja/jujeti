@@ -8,9 +8,7 @@ const quiEstLePlusPetit = (tab) =>
   // eslint-disable-next-line prefer-spread,implicit-arrow-linebreak
   Math.min.apply(Math, tab);
 // eslint-disable-next-line no-console
-console.log(
-  `Le plus petit nombre du tableau est : ${quiEstLePlusPetit(tableau)}`,
-);
+console.log(`Le plus petit nombre du tableau est : ${quiEstLePlusPetit(tableau)}`);
 
 /// /////////////////////////////////
 // trouver le nombre le plus grand
@@ -19,9 +17,7 @@ const tableau4 = [54, 7, 10, 43, 77, 456, 20, 34];
 // eslint-disable-next-line prefer-spread
 const quiEstLePlusGrand = (tab) => Math.max.apply(Math, tab);
 // eslint-disable-next-line no-console
-console.log(
-  `Le plus grand nombre du tableau est : ${quiEstLePlusGrand(tableau4)}`,
-);
+console.log(`Le plus grand nombre du tableau est : ${quiEstLePlusGrand(tableau4)}`);
 
 /// ////////////////////////////
 // trier par ordre croissant //
