@@ -1,7 +1,6 @@
 const tableMultiplication = (multiplicity: number) => {
   let table = `Table de ${multiplicity} :`;
-  // eslint-disable-next-line no-plusplus
-  for (let i = 0; i <= 10; i++) {
+  for (let i = 0; i <= 10; i += 1) {
     table += `\n${multiplicity} X ${i} = ${multiplicity * i}`;
   }
   return table;

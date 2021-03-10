@@ -14,3 +14,5 @@ C'est le produit de tous les entiers qui précèdent ou qui sont
 égaux à N, ici 5.`, () => {
   expect(factorielle(5)).toBe(120);
 });
+
+// refaire en recursive

@@ -13,8 +13,7 @@ function descendingOrder(n) {
     .map((nb) => nb)
     .sort((a, b) => b - a)
     .join('');
-  // eslint-disable-next-line radix
-  return parseInt(tab);
+  return parseInt(tab, 10);
 }
 // eslint-disable-next-line no-console
 console.log(descendingOrder(6547189));
