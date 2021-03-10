@@ -7,8 +7,8 @@ const tableMultiplication = (multiplicity: number) => {
   return table;
 };
 
-test('Ecrire une fonction qui prend en entrée un nombre, et qui ensuite '
-  + 'écrit la table de multiplication de ce nombre', () => {
+test(`Ecrire une fonction qui prend en entrée un nombre, et qui ensuite '
+    'écrit la table de multiplication de ce nombre`, () => {
   expect(tableMultiplication(7)).toBe(`Table de 7 :
 7 X 0 = 0
 7 X 1 = 7

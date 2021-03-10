@@ -6,9 +6,11 @@ const nb3 = 1;
 const verifierNombre = (x: number, y: number, z: number) => {
   if (x !== y && x !== z && y !== z) {
     return 'Les trois variables sont différentes';
-  } if (x === y && x === z && y === z) {
+  }
+  if (x === y && x === z && y === z) {
     return 'Les trois variables sont identiques';
-  } if (x === y || x === z || y === z) {
+  }
+  if (x === y || x === z || y === z) {
     return 'deux des variables sont de valeurs égales';
   }
 };
