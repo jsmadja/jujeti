@@ -4,9 +4,7 @@
 // trouver le plus petit du tableau
 const tableau = [24, 7, 3, 19, 43, 1];
 
-const quiEstLePlusPetit = (tab) =>
-  // eslint-disable-next-line prefer-spread,implicit-arrow-linebreak
-  Math.min.apply(Math, tab);
+const quiEstLePlusPetit = (tab) => Math.min.apply(Math, tab);
 // eslint-disable-next-line no-console
 console.log(`Le plus petit nombre du tableau est : ${quiEstLePlusPetit(tableau)}`);
 
