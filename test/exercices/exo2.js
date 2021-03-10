@@ -4,7 +4,7 @@
 // trouver le plus petit du tableau
 const tableau = [24, 7, 3, 19, 43, 1];
 
-const quiEstLePlusPetit = (tab) => Math.min.apply(Math, tab);
+const quiEstLePlusPetit = (tab) => Math.min(...tab);
 // eslint-disable-next-line no-console
 console.log(`Le plus petit nombre du tableau est : ${quiEstLePlusPetit(tableau)}`);
 
@@ -13,7 +13,7 @@ console.log(`Le plus petit nombre du tableau est : ${quiEstLePlusPetit(tableau)}
 const tableau4 = [54, 7, 10, 43, 77, 456, 20, 34];
 
 // eslint-disable-next-line prefer-spread
-const quiEstLePlusGrand = (tab) => Math.max.apply(Math, tab);
+const quiEstLePlusGrand = (tab) => Math.max(...tab);
 // eslint-disable-next-line no-console
 console.log(`Le plus grand nombre du tableau est : ${quiEstLePlusGrand(tableau4)}`);
 
