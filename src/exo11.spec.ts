@@ -13,3 +13,5 @@ test(`Vous allez recevoir un mot. Votre travail consiste à renvoyer le caractè
   expect(getMiddle('vache')).toBe('c');
   expect(getMiddle('chat')).toBe('ha');
 });
+
+// refaire subStr();
