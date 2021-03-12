@@ -5,8 +5,16 @@ async function getDepartmentByOddCode() {
     const data = await axios.get('https://geo.api.gouv.fr/departements');
     return data.data.filter((d) => d.code % 2 !== 0);
   } catch (error) {
-    console.log(error);
+    return error;
   }
 }
-getDepartmentByOddCode()
-  .then((r) => console.log(`Les départements dont le code est impairs sont :`, r.map((dep) => `\n${dep.code} : ${dep.nom}`).join('')));
+// eslint-disable-next-line no-console
+getDepartmentByOddCode().then(
+  (r) =>
+    // eslint-disable-next-line no-console,implicit-arrow-linebreak
+    console.log(
+      'Les départements dont le code est impairs sont :',
+      r.map((dep) => `\n${dep.code} : ${dep.nom}`).join(''),
+    ),
+  // eslint-disable-next-line
+);

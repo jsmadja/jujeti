@@ -1,19 +1,18 @@
-import axios  from 'axios';
+import axios from 'axios';
 
 async function getDepartment(): Promise<any> {
   try {
     const departments = await axios.get('https://geo.api.gouv.fr/departements');
-    return departments.data.filter((d: { code: any; }) => d.code % 2 !== 0);
+    return departments.data.filter((d: { code: any }) => d.code % 2 !== 0);
   } catch (error) {
-    return await error;
+    return error;
   }
 }
 
 test('should filter odd department', async () => {
-  expect(await getDepartment()
-    .then((d) => d.map((dep: { code: any; nom: any; }) => `${dep.code} : ${dep.nom}`)
-    .join('\n')))
-    .toBe(`01 : Ain
+  expect(
+    await getDepartment().then((d) => d.map((dep: { code: any; nom: any }) => `${dep.code} : ${dep.nom}`).join('\n')),
+  ).toBe(`01 : Ain
 03 : Allier
 05 : Hautes-Alpes
 07 : Ardèche
